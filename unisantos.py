@@ -44,7 +44,7 @@ class Disciplina:
         self.__cod = cod
         self.__nome = nome
         self.prof = prof
-        self.__alunos: alunos
+        self.__alunos = alunos
 
     def media_notas(self):
         sum = 0
@@ -59,7 +59,7 @@ class Disciplina:
     def __str__(self):
         info = (f'Codigo: {self.__cod}\n'
                 f'Disciplina: {self.__nome}\n'
-                f'Professor:\n {self.prof}\n'
+                f'Professor:\n{self.prof}\n'
                 f'Media das Notas dos Alunos: {self.media_notas()}\n')
         return info
 
